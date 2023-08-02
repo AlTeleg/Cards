@@ -1,26 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Card from './Card';
+import CardImg from './CardImg';
 
-function App() {
+const reactImgSrc = 'https://static10.tgcnt.ru/posts/_0/c8/c8f7f4fa968020aa5670c7d1c00fc320.jpg'
+function App(): JSX.Element {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      <Card>
+        <CardImg src={reactImgSrc}/>
+     </Card>
+  ); 
 }
 
 export default App;
